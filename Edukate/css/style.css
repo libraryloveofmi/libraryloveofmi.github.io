@@ -9843,7 +9843,7 @@ h6,
   border-top: 2px dashed #F14D5D;
 }
 .courses-item {
-    height: 300px; /* or whatever height you want */
+    height: 600px; /* or whatever height you want */
     overflow: hidden;
 }
 
