@@ -146,13 +146,37 @@
                         <h4 class="mb-4">Use our simple online form to reach out to us instantly.</h4>
                     </div>
                     <div class="contact-form">
-                        <iframe 
-                            src="https://fs8.formsite.com/w2fyOt/6bn5kbv8rx/index" 
-                            width="100%" 
-                            height="550" 
-                            frameborder="0" 
-                            style="border:none;">
-                        </iframe>
+                        <form action="https://api.staticforms.xyz/submit" method="POST">
+                            <!-- StaticForms required fields -->
+                            <input type="hidden" name="accessKey" value="sf_14ff752dd8bb6aa716e4ecf7">
+                            <input type="hidden" name="redirectTo" value="https://yourwebsite.com/thank-you.html">
+
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <input type="text" name="name" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="email" name="email" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Email" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <input type="text" name="subject" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="Subject" required>
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="number" name="phone" class="form-control border-top-0 border-right-0 border-left-0 p-0" placeholder="(555)-555-5555" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea name="message" class="form-control border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Message" required></textarea>
+                            </div>
+
+                            <div>
+                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
