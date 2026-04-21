@@ -9982,3 +9982,32 @@ h6,
     color: var(--bs-dark);
 }
 /*** FAQs End ***/
+
+.county-pill a {
+    display: block;
+    text-decoration: none;
+    color: #120F2D;
+    background-color: #ECF4FF;
+    border: 2px solid #ECF4FF;
+    padding: 10px 16px;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+
+  .county-pill a:hover {
+    background-color: #2878EB;
+    border-color: #2878EB;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(40, 120, 235, 0.3);
+    text-decoration: none;
+  }
+
+  .county-pill a:active {
+    background-color: #F14D5D;
+    border-color: #F14D5D;
+    transform: translateY(0);
+  }
